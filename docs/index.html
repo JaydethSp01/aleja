@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="Un mensaje especial lleno de amor 💗" />
+    <meta name="theme-color" content="#ff69b4" />
+    <meta property="og:title" content="Para Alejandra 💗" />
+    <meta property="og:type" content="website" />
+    <title>Para Alejandra 💗</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --pink-gradient: linear-gradient(135deg, #ff6b9d 0%, #ffc0cb 100%);
+        --soft-pink: #ffb6c1;
+        --rose-pink: #ff69b4;
+        --pale-pink: #ffc0cb;
+        --white-pink: #fff0f5;
+        --cream: #fef5e7;
+        --white: #ffffff;
+        --text-soft: #6b5b73;
+        --carnation-pink: #ff6b9d;
+        --carnation-edge: #ff1744;
+        --shadow-soft: 0 10px 30px rgba(255, 182, 193, 0.2);
+      }
+
+      body {
+        background: linear-gradient(
+          to bottom,
+          #fef3f3 0%,
+          #ffe0e6 50%,
+          #ffd4db 100%
+        );
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        position: relative;
+        font-family: "Quicksand", sans-serif;
+        color: var(--text-soft);
+      }
+
+      /* Animated gradient background */
+      body::before {
+        content: "";
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+            circle at 20% 80%,
+            rgba(255, 182, 193, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 192, 203, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 40% 40%,
+            rgba(255, 105, 180, 0.2) 0%,
+            transparent 50%
+          );
+        animation: gradientShift 20s ease-in-out infinite;
+      }
+
+      @keyframes gradientShift {
+        0%,
+        100% {
+          transform: rotate(0deg) scale(1);
+        }
+        33% {
+          transform: rotate(120deg) scale(1.1);
+        }
+        66% {
+          transform: rotate(240deg) scale(0.9);
+        }
+      }
+
+      /* Floating hearts background */
+      .heart-bg {
+        position: absolute;
+        font-size: 20px;
+        color: rgba(255, 182, 193, 0.3);
+        animation: floatHearts 15s infinite linear;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      @keyframes floatHearts {
+        0% {
+          transform: translateY(100vh) translateX(0) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.3;
+        }
+        90% {
+          opacity: 0.3;
+        }
+        100% {
+          transform: translateY(-100vh) translateX(100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Bubble effect */
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 30% 30%,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 182, 193, 0.4)
+        );
+        opacity: 0.6;
+        animation: bubbleFloat 20s infinite ease-in-out;
+        box-shadow: inset -5px -5px 10px rgba(255, 182, 193, 0.2),
+          0 5px 15px rgba(255, 182, 193, 0.1);
+      }
+
+      @keyframes bubbleFloat {
+        0%,
+        100% {
+          transform: translateY(100vh) translateX(0) scale(0.5);
+          opacity: 0;
+        }
+        20% {
+          opacity: 0.6;
+        }
+        80% {
+          opacity: 0.6;
+        }
+        50% {
+          transform: translateY(-50vh) translateX(100px) scale(1);
+        }
+      }
+
+      /* Geometric patterns */
+      .geo-pattern {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        opacity: 0.05;
+        background-image: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            rgba(255, 182, 193, 0.1) 35px,
+            rgba(255, 182, 193, 0.1) 70px
+          ),
+          repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 35px,
+            rgba(255, 192, 203, 0.1) 35px,
+            rgba(255, 192, 203, 0.1) 70px
+          );
+        animation: patternMove 30s linear infinite;
+      }
+
+      @keyframes patternMove {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(70px, 70px);
+        }
+      }
+
+      .container {
+        max-width: 480px;
+        width: 90%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 30px;
+        padding: 3rem 2rem;
+        box-shadow: 0 20px 60px rgba(255, 105, 180, 0.15),
+          0 0 0 1px rgba(255, 182, 193, 0.1);
+        z-index: 10;
+        position: relative;
+        animation: fadeInUp 0.8s ease-out;
+        overflow: hidden;
+      }
+
+      .container::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 182, 193, 0.1) 0%,
+          transparent 70%
+        );
+        animation: rotateGlow 20s linear infinite;
+        pointer-events: none;
+      }
+
+      @keyframes rotateGlow {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        font-family: "Comfortaa", cursive;
+        font-size: clamp(2.2rem, 5vw, 3rem);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        background: var(--pink-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: drop-shadow(2px 2px 4px rgba(255, 182, 193, 0.3));
+      }
+
+      p {
+        color: var(--text-soft);
+        margin-bottom: 2rem;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        padding: 16px 24px;
+        border: 2px solid var(--pale-pink);
+        border-radius: 50px;
+        margin-bottom: 1.5rem;
+        outline: none;
+        font-size: 1rem;
+        text-align: center;
+        background: var(--white-pink);
+        color: var(--text-soft);
+        font-weight: 500;
+        font-family: "Quicksand", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      input::placeholder {
+        color: rgba(107, 91, 115, 0.5);
+      }
+
+      input:focus {
+        border-color: var(--rose-pink);
+        background: var(--white);
+        box-shadow: 0 0 0 4px rgba(255, 105, 180, 0.1);
+      }
+
+      button {
+        background: var(--pink-gradient);
+        color: var(--white);
+        border: none;
+        border-radius: 50px;
+        padding: 16px 48px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Comfortaa", cursive;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+      }
+
+      button::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+      }
+
+      button:hover::before {
+        width: 300px;
+        height: 300px;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+      }
+
+      .error-message {
+        color: var(--carnation-pink);
+        margin-top: 10px;
+        font-size: 0.95rem;
+        display: none;
+        font-weight: 500;
+      }
+
+      /* Realistic Carnation Flowers */
+      .carnation {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        opacity: 0.8;
+        animation: gentleFloat 20s infinite linear;
+        z-index: 5;
+        transform-style: preserve-3d;
+      }
+
+      .carnation-flower {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: spinFlower 15s infinite linear;
+      }
+
+      /* Carnation petals with realistic ruffled edges */
+      .petal-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .carnation-petal {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background: radial-gradient(
+          ellipse at bottom,
+          var(--white-pink) 0%,
+          var(--soft-pink) 40%,
+          var(--carnation-pink) 100%
+        );
+        border-radius: 0% 50% 20% 50%;
+        top: 50%;
+        left: 50%;
+        transform-origin: bottom center;
+        box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.5),
+          inset 2px 2px 5px rgba(255, 107, 157, 0.3);
+      }
+
+      /* Create ruffled edge effect */
+      .carnation-petal::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        border-radius: inherit;
+        transform: scale(0.9) rotate(10deg);
+        opacity: 0.8;
+      }
+
+      .carnation-petal::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right: 0;
+        height: 15px;
+        background: repeating-linear-gradient(
+          90deg,
+          transparent 0px,
+          transparent 3px,
+          var(--carnation-edge) 3px,
+          var(--carnation-edge) 4px
+        );
+        -webkit-mask: linear-gradient(to bottom, black 0%, transparent 100%);
+        mask: linear-gradient(to bottom, black 0%, transparent 100%);
+        opacity: 0.3;
+      }
+
+      /* Multiple layers of petals */
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(0deg) translateY(-15px);
+      }
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(45deg) translateY(-15px);
+      }
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(3) {
+        transform: translate(-50%, -50%) rotate(90deg) translateY(-15px);
+      }
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(4) {
+        transform: translate(-50%, -50%) rotate(135deg) translateY(-15px);
+      }
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(5) {
+        transform: translate(-50%, -50%) rotate(180deg) translateY(-15px);
+      }
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(6) {
+        transform: translate(-50%, -50%) rotate(225deg) translateY(-15px);
+      }
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(7) {
+        transform: translate(-50%, -50%) rotate(270deg) translateY(-15px);
+      }
+      .petal-layer:nth-child(1) .carnation-petal:nth-child(8) {
+        transform: translate(-50%, -50%) rotate(315deg) translateY(-15px);
+      }
+
+      .petal-layer:nth-child(2) {
+        transform: scale(0.8) translateZ(5px);
+      }
+
+      .petal-layer:nth-child(2) .carnation-petal {
+        background: radial-gradient(
+          ellipse at bottom,
+          var(--white) 0%,
+          var(--pale-pink) 40%,
+          var(--rose-pink) 100%
+        );
+      }
+
+      .petal-layer:nth-child(3) {
+        transform: scale(0.6) translateZ(10px);
+      }
+
+      .carnation-center {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(
+          circle,
+          var(--white) 0%,
+          var(--soft-pink) 50%,
+          var(--carnation-pink) 100%
+        );
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(255, 107, 157, 0.5),
+          inset 0 0 5px rgba(255, 255, 255, 0.8);
+        z-index: 10;
+      }
+
+      @keyframes gentleFloat {
+        0% {
+          transform: translateY(100vh) translateX(-50px) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        90% {
+          opacity: 0.8;
+        }
+        100% {
+          transform: translateY(-100vh) translateX(50px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      @keyframes spinFlower {
+        from {
+          transform: rotateZ(0deg) rotateY(0deg);
+        }
+        to {
+          transform: rotateZ(360deg) rotateY(360deg);
+        }
+      }
+
+      /* Success Screen */
+      .success-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          #fef3f3 0%,
+          #ffe0e6 50%,
+          #ffd4db 100%
+        );
+        z-index: 20;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation: fadeIn 0.8s ease;
+        padding: 2rem;
+        overflow-y: auto;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .success-message {
+        font-family: "Comfortaa", cursive;
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        background: var(--pink-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .success-message p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        color: var(--text-soft);
+        font-weight: 400;
+      }
+
+      .floating-carnations {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      /* Sparkle effect */
+      .sparkle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0;
+        animation: sparkleAnim 3s linear infinite;
+      }
+
+      @keyframes sparkleAnim {
+        0%,
+        100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .iframe-container {
+        position: relative;
+        width: 90%;
+        max-width: 700px;
+        height: 0;
+        padding-top: 56.25%;
+        margin: 2rem auto;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 40px rgba(255, 182, 193, 0.2);
+        background: var(--white-pink);
+      }
+
+      .iframe-container iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: none;
+      }
+
+      .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .loader-text {
+        margin-top: 20px;
+        color: var(--carnation-pink);
+        font-weight: 600;
+      }
+
+      /* Heart loader */
+      .heart-loader {
+        width: 50px;
+        height: 45px;
+        position: relative;
+        animation: heartbeat 1.2s infinite;
+      }
+
+      .heart-loader:before,
+      .heart-loader:after {
+        content: "";
+        width: 26px;
+        height: 40px;
+        position: absolute;
+        left: 25px;
+        top: 0;
+        background: var(--rose-pink);
+        border-radius: 25px 25px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+
+      .heart-loader:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(0.8);
+        }
+        50% {
+          transform: scale(1);
+        }
+      }
+
+      /* Soft petal rain effect */
+      .petal-rain {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: var(--soft-pink);
+        border-radius: 0 100% 0 100%;
+        opacity: 0.6;
+        animation: petalFall 10s linear infinite;
+      }
+
+      @keyframes petalFall {
+        0% {
+          transform: translateY(-100px) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.6;
+        }
+        90% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Beautiful bouquet */
+      .bouquet-container {
+        position: fixed;
+        bottom: -100px;
+        right: 20px;
+        width: 200px;
+        height: 300px;
+        animation: bouquetSlideUp 1.5s ease-out forwards;
+        z-index: 15;
+      }
+
+      @keyframes bouquetSlideUp {
+        to {
+          bottom: 20px;
+        }
+      }
+
+      .heart-emoji {
+        font-size: 1.2em;
+        vertical-align: middle;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .container {
+          padding: 2rem 1.5rem;
+          width: 92%;
+        }
+
+        .carnation {
+          width: 60px;
+          height: 60px;
+        }
+
+        .carnation-petal {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20%,
+        60% {
+          transform: translateX(-5px);
+        }
+        40%,
+        80% {
+          transform: translateX(5px);
+        }
+      }
+
+      .shake {
+        animation: shake 0.5s ease;
+      }
+
+      /* Soft glow effect */
+      .glow {
+        box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+      }
+
+      /* Accessibility */
+      button:focus,
+      input:focus {
+        outline: 3px solid var(--rose-pink);
+        outline-offset: 2px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="geo-pattern"></div>
+    <div class="floating-carnations" aria-hidden="true"></div>
+
+    <div class="container">
+      `
+      <h1>Para Alejandra <span class="heart-emoji">💗</span></h1>
+      <p>
+        Si con esto le quedan dudas, pailas jajajaja <br />
+        Para verlo, ingresa la contraseña que te pasé
+        <span class="heart-emoji">💗</span>
+      </p>
+
+      <input
+        type="text"
+        id="password"
+        placeholder="Ingresa la contraseña..."
+        maxlength="10"
+        aria-label="Ingresa la contraseña"
+      />
+
+      <button id="submit-btn" aria-label="Abrir mensaje">
+        Abrir <span class="heart-emoji">💗</span>
+      </button>
+
+      <p class="error-message" id="error-msg" aria-live="polite">
+        Contraseña incorrecta. Intenta de nuevo
+        <span class="heart-emoji">💗</span>
+      </p>
+    </div>
+
+    <div class="success-container" id="success-screen">
+      <div class="success-message">
+        <h2>Alejandra <span class="heart-emoji">💗</span></h2>
+        <p>He preparado algo especial para ti...</p>
+      </div>
+
+      <div class="iframe-container">
+        <div class="loader" id="iframe-loader">
+          <div class="heart-loader"></div>
+          <p class="loader-text">
+            Cargando tu sorpresa... <span class="heart-emoji">💗</span>
+          </p>
+        </div>
+        <iframe
+          id="content-iframe"
+          loading="lazy"
+          src="https://www.canva.com/design/DAGk6J6yn-U/0mp5vArEzJoCCcSMuzzokQ/view?embed"
+          allowfullscreen="allowfullscreen"
+          allow="fullscreen"
+          title="Mensaje especial para Alejandra"
+        >
+        </iframe>
+      </div>
+
+      <div class="bouquet-container" id="bouquet" style="display: none">
+        <!-- Bouquet will be created dynamically -->
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const passwordInput = document.getElementById("password");
+        const submitBtn = document.getElementById("submit-btn");
+        const errorMsg = document.getElementById("error-msg");
+        const successScreen = document.getElementById("success-screen");
+        const contentIframe = document.getElementById("content-iframe");
+        const bouquet = document.getElementById("bouquet");
+
+        // Initialize
+        createFloatingCarnations();
+        createSparkles();
+        createBackgroundElements();
+
+        setTimeout(() => passwordInput.focus(), 500);
+
+        // Event listeners
+        submitBtn.addEventListener("click", checkPassword);
+        passwordInput.addEventListener("keyup", (e) => {
+          if (e.key === "Enter") checkPassword();
+        });
+
+        contentIframe.addEventListener("load", () => {
+          document.getElementById("iframe-loader").style.display = "none";
+        });
+
+        function checkPassword() {
+          const password = passwordInput.value.trim().toLowerCase();
+
+          // Check for password "aleja123"
+          if (password === "aleja123") {
+            // Success!
+            successScreen.style.display = "flex";
+
+            setTimeout(() => {
+              bouquet.style.display = "block";
+              createBouquet();
+            }, 500);
+
+            createCelebrationEffects();
+
+            if (window.sessionStorage) {
+              sessionStorage.setItem("passwordSuccess", "true");
+            }
+          } else {
+            // Wrong password
+            errorMsg.style.display = "block";
+            passwordInput.value = "";
+            passwordInput.focus();
+            passwordInput.classList.add("shake");
+
+            if (navigator.vibrate) navigator.vibrate(200);
+
+            setTimeout(() => {
+              passwordInput.classList.remove("shake");
+              errorMsg.style.display = "none";
+            }, 2000);
+          }
+        }
+
+        function createCarnation(size = 1) {
+          const carnation = document.createElement("div");
+          carnation.className = "carnation";
+          carnation.style.transform = `scale(${size})`;
+
+          const flower = document.createElement("div");
+          flower.className = "carnation-flower";
+
+          // Create 3 layers of petals
+          for (let layer = 0; layer < 3; layer++) {
+            const petalLayer = document.createElement("div");
+            petalLayer.className = "petal-layer";
+
+            // 8 petals per layer
+            for (let i = 0; i < 8; i++) {
+              const petal = document.createElement("div");
+              petal.className = "carnation-petal";
+              petalLayer.appendChild(petal);
+            }
+
+            flower.appendChild(petalLayer);
+          }
+
+          // Add center
+          const center = document.createElement("div");
+          center.className = "carnation-center";
+          flower.appendChild(center);
+
+          carnation.appendChild(flower);
+          return carnation;
+        }
+
+        function createFloatingCarnations() {
+          const container = document.querySelector(".floating-carnations");
+          const isMobile = window.innerWidth < 768;
+          const count = isMobile ? 5 : 10;
+
+          const prefersReducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+          ).matches;
+          if (prefersReducedMotion) return;
+
+          // Create initial carnations
+          for (let i = 0; i < count; i++) {
+            setTimeout(() => {
+              const carnation = createCarnation(Math.random() * 0.5 + 0.5);
+              carnation.style.left = Math.random() * 100 + "vw";
+              carnation.style.animationDuration = Math.random() * 10 + 15 + "s";
+              carnation.style.animationDelay = Math.random() * 5 + "s";
+
+              container.appendChild(carnation);
+
+              // Remove after animation
+              setTimeout(() => carnation.remove(), 25000);
+            }, i * 800);
+          }
+
+          // Continuously create new carnations
+          setInterval(
+            () => {
+              if (container.children.length > (isMobile ? 8 : 15)) return;
+
+              const carnation = createCarnation(Math.random() * 0.5 + 0.5);
+              carnation.style.left = Math.random() * 100 + "vw";
+              carnation.style.animationDuration = Math.random() * 10 + 15 + "s";
+
+              container.appendChild(carnation);
+              setTimeout(() => carnation.remove(), 25000);
+            },
+            isMobile ? 3000 : 2000
+          );
+
+          // Add petal rain
+          setInterval(() => {
+            const petal = document.createElement("div");
+            petal.className = "petal-rain";
+            petal.style.left = Math.random() * 100 + "vw";
+            petal.style.animationDuration = Math.random() * 5 + 5 + "s";
+            petal.style.animationDelay = Math.random() * 2 + "s";
+
+            container.appendChild(petal);
+            setTimeout(() => petal.remove(), 12000);
+          }, 1500);
+        }
+
+        function createSparkles() {
+          const body = document.body;
+          setInterval(() => {
+            const sparkle = document.createElement("div");
+            sparkle.className = "sparkle";
+            sparkle.style.left = Math.random() * 100 + "vw";
+            sparkle.style.top = Math.random() * 100 + "vh";
+            sparkle.style.animationDelay = Math.random() * 2 + "s";
+
+            body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 3000);
+          }, 500);
+        }
+
+        function createCelebrationEffects() {
+          const container = document.body;
+          const isMobile = window.innerWidth < 768;
+          const count = isMobile ? 20 : 40;
+
+          for (let i = 0; i < count; i++) {
+            setTimeout(() => {
+              const carnation = createCarnation(Math.random() + 0.5);
+              carnation.style.left = Math.random() * 100 + "vw";
+              carnation.style.animationDuration = Math.random() * 5 + 3 + "s";
+              carnation.style.zIndex = "30";
+
+              container.appendChild(carnation);
+              setTimeout(() => carnation.remove(), 8000);
+            }, i * 100);
+          }
+        }
+
+        function createBouquet() {
+          const bouquetContainer = document.getElementById("bouquet");
+          const positions = [
+            { x: 50, y: 30, scale: 1.2, rotate: -15 },
+            { x: 80, y: 50, scale: 1, rotate: 20 },
+            { x: 30, y: 60, scale: 1.1, rotate: -25 },
+            { x: 100, y: 40, scale: 0.9, rotate: 30 },
+            { x: 60, y: 80, scale: 1.3, rotate: -10 },
+          ];
+
+          positions.forEach((pos, index) => {
+            setTimeout(() => {
+              const carnation = createCarnation(pos.scale);
+              carnation.style.position = "absolute";
+              carnation.style.left = pos.x + "px";
+              carnation.style.top = pos.y + "px";
+              carnation.style.transform = `scale(${pos.scale}) rotate(${pos.rotate}deg)`;
+              carnation.style.animation = "none";
+
+              bouquetContainer.appendChild(carnation);
+            }, index * 200);
+          });
+
+          // Add stems
+          setTimeout(() => {
+            const stem = document.createElement("div");
+            stem.style.position = "absolute";
+            stem.style.width = "100px";
+            stem.style.height = "150px";
+            stem.style.bottom = "0";
+            stem.style.left = "50px";
+            stem.style.background =
+              "linear-gradient(to bottom, #90a955 0%, #52734d 100%)";
+            stem.style.clipPath = "polygon(45% 0%, 55% 0%, 60% 100%, 40% 100%)";
+            stem.style.zIndex = "-1";
+
+            bouquetContainer.appendChild(stem);
+          }, positions.length * 200);
+        }
+
+        function createBackgroundElements() {
+          // Create floating hearts
+          const heartSymbols = ["💗", "💕", "💖", "💝", "💓"];
+          const container = document.body;
+
+          // Initial hearts
+          for (let i = 0; i < 15; i++) {
+            const heart = document.createElement("div");
+            heart.className = "heart-bg";
+            heart.textContent =
+              heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = Math.random() * 20 + 15 + "px";
+            heart.style.animationDuration = Math.random() * 10 + 10 + "s";
+            heart.style.animationDelay = Math.random() * 10 + "s";
+            container.appendChild(heart);
+          }
+
+          // Create bubbles
+          for (let i = 0; i < 8; i++) {
+            const bubble = document.createElement("div");
+            bubble.className = "bubble";
+            const size = Math.random() * 60 + 20;
+            bubble.style.width = size + "px";
+            bubble.style.height = size + "px";
+            bubble.style.left = Math.random() * 100 + "vw";
+            bubble.style.animationDuration = Math.random() * 10 + 15 + "s";
+            bubble.style.animationDelay = Math.random() * 10 + "s";
+            container.appendChild(bubble);
+          }
+
+          // Continuously add new hearts
+          setInterval(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart-bg";
+            heart.textContent =
+              heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = Math.random() * 20 + 15 + "px";
+            heart.style.animationDuration = Math.random() * 10 + 10 + "s";
+            container.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 20000);
+          }, 3000);
+        }
+
+        // Check if returning user
+        if (
+          window.sessionStorage &&
+          sessionStorage.getItem("passwordSuccess") === "true"
+        ) {
+          successScreen.style.display = "flex";
+          setTimeout(() => {
+            bouquet.style.display = "block";
+            createBouquet();
+          }, 500);
+        }
+      });
+    </script>
+  </body>
+</html>
